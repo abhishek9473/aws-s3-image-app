@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+      @apply cursor-pointer bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-white font-semibold
+  }
+  .editTaskbutton {
+      @apply cursor-pointer bg-teal-600 hover:bg-teal-800 px-4 py-1 rounded-md text-white font-medium
+  }
+  .deleteTaskbutton {
+      @apply cursor-pointer bg-red-500 hover:bg-red-700 px-4 py-1 rounded-md text-white font-medium
+  }
+  .cancelTaskbutton {
+      @apply cursor-pointer bg-slate-600 hover:bg-slate-700 px-4 py-1 rounded-md text-white font-medium
+  }
+
+
+}
