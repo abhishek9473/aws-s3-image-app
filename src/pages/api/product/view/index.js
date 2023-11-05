@@ -1,6 +1,8 @@
+import connectDB from "@/db";
 import Product from "@/schema/Product";
 
 export default async (req, res) => {
+  connectDB();
   if (req.method === "GET") {
     try {
       const products = await Product.find();
