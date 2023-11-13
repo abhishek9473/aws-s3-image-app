@@ -1,4 +1,5 @@
 import { getAllProducts, singleProduct } from "@/services/databaseApi";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
@@ -58,12 +59,20 @@ function products() {
                 </div>
               </div>
             </div>
-            <div className="md:w-[36rem] w-[24rem] flex flex-row flex-wrap">
+            <div className="md:w-[36rem] w-[24rem] flex flex-row gap-2 flex-wrap">
               {pageReady &&
                 productImages.map((image, i) => (
-                  <p id={i} className="md:w-48 w-32 md:h-48 h-32  p-2">
-                    <img src={image} className="h-full w-full" />
-                  </p>
+                  <div
+                    key={i}
+                    className="md:w-[10rem] md:h-[10rem] w-32 h-32 p-2  relative"
+                  >
+                    <Image
+                      src={image}
+                      alt={`Product Image ${i + 1}`}
+                      layout="fill"
+                      objectFit="cover"
+                    />
+                  </div>
                 ))}
             </div>
           </div>

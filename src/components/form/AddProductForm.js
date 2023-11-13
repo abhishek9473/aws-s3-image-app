@@ -176,7 +176,7 @@ function AddProductForm({ close, refresh }) {
       <form onSubmit={handleSubmit(formDataHandler)}>
         <div className="flex flex-col justify-between grow">
           {/* 1 */}
-          <div className="flex flex-row">
+          <div className="flex flex-row flex-wrap md:flex-nowrap">
             {/* A left side :: product discription */}
             <div className="space-y-4 px-2 py-2">
               <div className="flex flex-row gap-2 justify-between">
@@ -268,7 +268,7 @@ function AddProductForm({ close, refresh }) {
               </div>
             </div>
             {/* B left side :: product image */}
-            <div className="w-96 flex-grow px-2 py-2 border-l-2">
+            <div className="w-96 flex-grow px-2 py-2 md:border-l-2 border-t-2 md:border-t-0 ">
               <div className=" flex flex-row justify-between">
                 <span className="h-12">
                   <span>Images (min-1 , max-6)</span>
