@@ -7,7 +7,7 @@ This projects based on a simple product upload system.
 - Use Next.js for both frontend and backend.
 - Creating a responsive UI with Tailwind CSS.
 - Utilized AWS-S3 for image storage and MongoDB for database.
-- use can uplaod image data with minimum 1 and maximum 6 product image.
+- user can uplaod image data with minimum 1 and maximum 6 product image.
 
 ## Deploy on Vercel
 
